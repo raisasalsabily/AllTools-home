@@ -1,5 +1,5 @@
 // import scss files
-@import "./variables", "./resets";
+@import "./variables", "./resets", "./responsive", "./nav", "./header";
 
 /* ==================== GOOGLE FONTS ==================== */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap");
@@ -8,8 +8,8 @@
 
 body {
   background-color: #f2e2d0;
-  font-family: var(--body-font);
-  color: var(--title-color);
+  font-family: $body-font;
+  color: $title-color;
 }
 
 /* =============== top__square ================== */
@@ -18,26 +18,6 @@ body {
   height: 35px;
   width: 100%;
   border-bottom: 4px solid black;
-}
-
-/* =============== nav ================== */
-nav {
-  background-color: pink;
-  height: 70px;
-}
-
-/* =============== header ================== */
-header {
-  background-color: orange;
-  height: 100px;
-
-  /* padding settings */
-  display: flex;
-}
-
-.header___text {
-  background-color: white;
-  margin: auto 50px;
 }
 
 /* =============== main__container ================== */
@@ -66,9 +46,4 @@ header {
 
 .uil {
   font-size: 60px;
-}
-
-/* ============= Media Responsive ============= */
-@media screen and (min-width: 767px) {
-  /* content */
 }
