@@ -1,0 +1,74 @@
+// import scss files
+@import "./variables", "./resets";
+
+/* ==================== GOOGLE FONTS ==================== */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap");
+
+/* ==================== GOOGLE FONTS END ==================== */
+
+body {
+  background-color: #f2e2d0;
+  font-family: var(--body-font);
+  color: var(--title-color);
+}
+
+/* =============== top__square ================== */
+.top__square {
+  background-color: white;
+  height: 35px;
+  width: 100%;
+  border-bottom: 4px solid black;
+}
+
+/* =============== nav ================== */
+nav {
+  background-color: pink;
+  height: 70px;
+}
+
+/* =============== header ================== */
+header {
+  background-color: orange;
+  height: 100px;
+
+  /* padding settings */
+  display: flex;
+}
+
+.header___text {
+  background-color: white;
+  margin: auto 50px;
+}
+
+/* =============== main__container ================== */
+.main__container {
+  padding-top: 25px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.tools_container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.tool {
+  margin: auto;
+  text-align: center;
+  text-justify: center;
+}
+
+.tool__img {
+  background-color: white;
+  height: 90px;
+}
+
+.uil {
+  font-size: 60px;
+}
+
+/* ============= Media Responsive ============= */
+@media screen and (min-width: 767px) {
+  /* content */
+}
