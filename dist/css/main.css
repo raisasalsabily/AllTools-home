@@ -1,65 +1,23 @@
 /* ==================== VARIABLE CSS ==================== */
+/* .5rem = 8px, 1 rem 16px, 1.5rem = 24px */
+/* ======= Font Weight ======= */
+/* ======= Icons ======= */
+/* 31px = 1.9375em */
+/* =============== Colors ==================== */
+/* =============== Border ================== */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap");
-:root {
-  /* ========== Font and Typography ============ */
-  font-family: "Montserrat", sans-serif;
-  /* .5rem = 8px, 1 rem 16px, 1.5rem = 24px */
-  --big-font-size: 0.75rem;
-  --h1-font-size: 0.85rem;
-  --h2-font-size: 0.6rem;
-  --h3-font-size: 0.5rem;
-  --normal-font-size: 0.928rem;
-  --bigger-font-size: 1.5rem;
-  --small-font-size: 0.813rem;
-  --smaller-font-size: 0.75rem;
-  /* ======= Font Weight ======= */
-  --font-medium: 500;
-  --font-bold: 700;
-  /* ======= Icons ======= */
-  --share-icon-size: 1.9375em;
-  --share-icon-size-alt: 2.2em;
-  /* 31px = 1.9375em */
-  /* =============== Colors ==================== */
-  --first-color: #ea7600;
-  --first-color-second: #f69f49;
-  --first-color-alt: #ab5b0a;
-  --first-color-lighter: #ecbe90;
-  --second-color: #717575;
-  --second-color-alt: #575c5c;
-  --second-color-lighter: #ececec;
-  --title-color: #000;
-  --text-color: #000;
-  --text-color-light: #fff;
-  --input-color: #fff;
-  --output-color: #fff;
-  --body-color: #f2e2d0;
-  --container-color: #fff;
-  /* =============== Border ================== */
-  --normal-border-radius: 10px;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* ========== Font and Typography ============ */
+  font-family: "Montserrat", sans-serif;
 }
 
-/* ==================== GOOGLE FONTS ==================== */
-/* ==================== GOOGLE FONTS END ==================== */
-body {
-  background-color: #f2e2d0;
-  font-family: var(--body-font);
-  color: var(--title-color);
+/* ============= Media Responsive ============= */
+@media screen and (min-width: 767px) {
+  /* content */
 }
-
-/* =============== top__square ================== */
-.top__square {
-  background-color: white;
-  height: 35px;
-  width: 100%;
-  border-bottom: 4px solid black;
-}
-
 /* =============== nav ================== */
 nav {
   background-color: pink;
@@ -75,8 +33,23 @@ header {
 }
 
 .header___text {
-  background-color: white;
   margin: auto 50px;
+}
+
+/* ==================== GOOGLE FONTS ==================== */
+/* ==================== GOOGLE FONTS END ==================== */
+body {
+  background-color: #f2e2d0;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+}
+
+/* =============== top__square ================== */
+.top__square {
+  background-color: white;
+  height: 35px;
+  width: 100%;
+  border-bottom: 4px solid black;
 }
 
 /* =============== main__container ================== */
@@ -105,9 +78,4 @@ header {
 
 .uil {
   font-size: 60px;
-}
-
-/* ============= Media Responsive ============= */
-@media screen and (min-width: 767px) {
-  /* content */
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
