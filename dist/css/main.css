@@ -24,6 +24,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   color: black;
+  position: relative;
 }
 nav .main__menu {
   display: flex;
@@ -38,37 +39,40 @@ nav .main__menu li a {
   font-size: 1.2rem;
 }
 nav .main__menu li a:hover {
-  background: orange;
+  background: #ea7600;
 }
 
 nav .open__menu {
+  background-color: #ea7600;
+  width: 42.5px;
+  height: 42.5px;
+  border: 4px black solid;
   font-size: 2rem;
-  margin: 20px;
+  margin: 20px 30px;
   cursor: pointer;
   display: none;
+}
+
+nav .open__menu__shadow {
+  background-color: white;
+  width: 42.5px;
+  height: 42.5px;
+  border: 4px black solid;
+  margin: 20px 30px;
+  position: absolute;
+  z-index: -1;
+  transform: translate(5px, 5px);
 }
 
 nav .main__menu .close__menu,
 .icons i {
-  font-size: 2rem;
+  font-size: 1.8rem;
   cursor: pointer;
   display: none;
 }
 
-.fa-facebook:hover {
-  color: orange;
-}
-
-.fa-instagram:hover {
-  color: orange;
-}
-
-.fa-twitter:hover {
-  color: orange;
-}
-
-.fa-github:hover {
-  color: orange;
+.fab:hover {
+  color: black;
 }
 
 @media (max-width: 800px) {
@@ -93,7 +97,9 @@ nav .main__menu .close__menu,
     right: 20px;
   }
   nav .open__menu {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   nav .main__menu li a:hover {
     background: none;
@@ -107,7 +113,6 @@ nav .main__menu .close__menu,
 }
 /* =============== header ================== */
 header {
-  background-color: orange;
   height: 100px;
   /* padding settings */
   display: flex;
@@ -157,6 +162,6 @@ body {
   height: 90px;
 }
 
-.uil {
+.tool__img .uil-dice-five {
   font-size: 60px;
 }/*# sourceMappingURL=main.css.map */
