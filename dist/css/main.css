@@ -20,10 +20,91 @@
 }
 /* =============== nav ================== */
 nav {
-  background-color: pink;
   height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  color: black;
+}
+nav .main__menu {
+  display: flex;
+  list-style: none;
+}
+nav .main__menu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 1.2rem;
+}
+nav .main__menu li a:hover {
+  background: orange;
 }
 
+nav .open__menu {
+  font-size: 2rem;
+  margin: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+nav .main__menu .close__menu,
+.icons i {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.fa-facebook:hover {
+  color: orange;
+}
+
+.fa-instagram:hover {
+  color: orange;
+}
+
+.fa-twitter:hover {
+  color: orange;
+}
+
+.fa-github:hover {
+  color: orange;
+}
+
+@media (max-width: 800px) {
+  nav .main__menu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: orange;
+    transition: top 1s ease;
+    display: none;
+  }
+  nav .main__menu .close__menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .open__menu {
+    display: block;
+  }
+  nav .main__menu li a:hover {
+    background: none;
+    color: black;
+    font-size: 1.6rem;
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+}
 /* =============== header ================== */
 header {
   background-color: orange;
@@ -78,4 +159,4 @@ body {
 
 .uil {
   font-size: 60px;
-} /*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
