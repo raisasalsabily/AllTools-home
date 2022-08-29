@@ -121,6 +121,9 @@ header {
 .header___text {
   margin: auto 50px;
 }
+.header___text h4 {
+  font-weight: lighter;
+}
 
 /* ==================== GOOGLE FONTS ==================== */
 /* ==================== GOOGLE FONTS END ==================== */
@@ -160,6 +163,26 @@ body {
 .tool__img {
   background-color: white;
   height: 90px;
+  border-radius: 3px;
+  border-top: 5px solid #ea7600;
+  border-bottom: 5px solid #ea7600;
+  border-left: 3px solid #ea7600;
+  border-right: 3px solid #ea7600;
+}
+.tool__img i {
+  color: black;
+}
+
+.tool__text {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 0.9em;
+  text-decoration: none;
+  color: black;
+}
+
+.tool a {
+  text-decoration: none;
 }
 
 .tool__img .uil-dice-five {
