@@ -46,6 +46,7 @@ nav .open__menu__shadow {
   position: absolute;
   z-index: -1;
   transform: translate(5px, 5px);
+  display: none;
 }
 
 nav .main__menu .close__menu,
@@ -97,5 +98,9 @@ nav .main__menu .close__menu,
   .icons i {
     display: inline-block;
     padding: 12px;
+  }
+
+  nav .open__menu__shadow{
+    display: block;
   }
 }

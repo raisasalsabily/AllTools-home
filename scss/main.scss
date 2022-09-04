@@ -47,7 +47,6 @@ body {
   border-bottom: 5px solid #ea7600;
   border-left: 3px solid #ea7600;
   border-right: 3px solid #ea7600;
-
   i {
     color: black;
   }
@@ -67,4 +66,18 @@ body {
 
 .tool__img .uil-dice-five {
   font-size: 60px;
+}
+
+@media screen and (min-width: 540px) {
+  .tools_container {
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .tool__img{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
