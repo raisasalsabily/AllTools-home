@@ -15,8 +15,15 @@
 }
 
 /* ============= Media Responsive ============= */
-@media screen and (min-width: 767px) {
-  /* content */
+/* Medium screen devices (768px and above) for home page */
+@media only screen and (min-width: 768px) {
+  .tools_container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .tool__img {
+    height: 150px;
+    width: 300px;
+  }
 }
 /* =============== nav ================== */
 nav {
@@ -62,6 +69,7 @@ nav .open__menu__shadow {
   position: absolute;
   z-index: -1;
   transform: translate(5px, 5px);
+  display: none;
 }
 
 nav .main__menu .close__menu,
@@ -110,6 +118,9 @@ nav .main__menu .close__menu,
     display: inline-block;
     padding: 12px;
   }
+  nav .open__menu__shadow {
+    display: block;
+  }
 }
 /* =============== header ================== */
 header {
@@ -141,7 +152,7 @@ body {
   border-bottom: 4px solid black;
 }
 
-/* =============== main__container ================== */
+/* =============== HOME main__container ================== */
 .main__container {
   padding-top: 25px;
   padding-right: 50px;
@@ -187,4 +198,18 @@ body {
 
 .tool__img .uil-dice-five {
   font-size: 60px;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/* ==================== Media Responsive ==================== */
+@media screen and (min-width: 540px) {
+  .tools_container {
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .tool__img {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

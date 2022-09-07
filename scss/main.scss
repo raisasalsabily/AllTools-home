@@ -20,7 +20,7 @@ body {
   border-bottom: 4px solid black;
 }
 
-/* =============== main__container ================== */
+/* =============== HOME main__container ================== */
 .main__container {
   padding-top: 25px;
   padding-right: 50px;
@@ -68,16 +68,20 @@ body {
   font-size: 60px;
 }
 
+/* ==================== Media Responsive ==================== */
+
 @media screen and (min-width: 540px) {
   .tools_container {
     gap: 15px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  .tool__img{
+  .tool__img {
     height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
+
+// note: for Medium screen devices (768px and above) for home page is configured in _responsive.scss

@@ -1,4 +1,14 @@
 /* ============= Media Responsive ============= */
-@media screen and (min-width: 767px) {
-  /* content */
+
+/* Medium screen devices (768px and above) for home page */
+@media only screen and (min-width: 768px) {
+  .tools_container {
+    // gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .tool__img {
+    height: 150px;
+    width: 300px;
+  }
 }
