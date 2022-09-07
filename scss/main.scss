@@ -38,6 +38,7 @@ body {
   text-align: center;
   text-justify: center;
   height: 130px;
+  width: 185px;
 }
 
 .tool__img {
@@ -47,7 +48,10 @@ body {
   align-items: center;
 
   background-color: white;
+
   height: 75%;
+  width: 100%;
+
   border-radius: 3px;
   border-top: 5px solid #ea7600;
   border-bottom: 5px solid #ea7600;
@@ -55,6 +59,7 @@ body {
   border-right: 3px solid #ea7600;
   i {
     color: black;
+    font-size: 60px;
   }
 }
 
@@ -68,10 +73,6 @@ body {
 
 .tool a {
   text-decoration: none;
-}
-
-.tool__img .uil-dice-five {
-  font-size: 60px;
 }
 
 /* ==================== Media Responsive ==================== */
@@ -108,10 +109,12 @@ body {
   .tool__img {
     font-size: 3em;
     height: 75%;
+
+    i {
+      font-size: 1.8em;
+    }
   }
-  .tool__img .uil-dice-five {
-    font-size: 1.8em;
-  }
+
   .tool__text {
     margin-top: 15px;
     font-size: 1.2em;
