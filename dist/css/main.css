@@ -1,4 +1,4 @@
-/* ==================== VARIABLE CSS ==================== */
+/* ============= Media Responsive ============= */ /* ==================== VARIABLE CSS ==================== */
 /* .5rem = 8px, 1 rem 16px, 1.5rem = 24px */
 /* ======= Font Weight ======= */
 /* ======= Icons ======= */
@@ -14,17 +14,6 @@
   font-family: "Montserrat", sans-serif;
 }
 
-/* ============= Media Responsive ============= */
-/* Medium screen devices (768px and above) for home page */
-@media only screen and (min-width: 768px) {
-  .tools_container {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  .tool__img {
-    height: 150px;
-    width: 300px;
-  }
-}
 /* =============== nav ================== */
 nav {
   height: 70px;
@@ -144,7 +133,7 @@ body {
   color: #000;
 }
 
-/* =============== top__square ================== */
+/* =============== top__square (white square on the page top) ================== */
 .top__square {
   background-color: white;
   height: 35px;
@@ -169,11 +158,15 @@ body {
   margin: auto;
   text-align: center;
   text-justify: center;
+  height: 130px;
 }
 
 .tool__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
-  height: 90px;
+  height: 75%;
   border-radius: 3px;
   border-top: 5px solid #ea7600;
   border-bottom: 5px solid #ea7600;
@@ -203,13 +196,43 @@ body {
 /* ==================== Media Responsive ==================== */
 @media screen and (min-width: 540px) {
   .tools_container {
-    gap: 15px;
+    gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+  .tool {
+    margin: auto;
+    text-align: center;
+    text-justify: center;
+    height: 140px;
+  }
   .tool__img {
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 75%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .tools_container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .tool {
+    margin: auto;
+    text-align: center;
+    text-justify: center;
+    width: 300px;
+    height: 200px;
+  }
+  .tool__img {
+    font-size: 3em;
+    height: 75%;
+  }
+  .tool__img .uil-dice-five {
+    font-size: 1.8em;
+  }
+  .tool__text {
+    margin-top: 15px;
+    font-size: 1.2em;
+  }
+  .header___text {
+    font-size: 1.6em;
+    margin: auto 70px;
   }
 }

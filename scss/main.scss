@@ -1,5 +1,5 @@
 // import scss files
-@import "./variables", "./resets", "./responsive", "./nav", "./header";
+@import "./responsive", "./variables", "./resets", "./nav", "./header";
 
 /* ==================== GOOGLE FONTS ==================== */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap");
@@ -12,7 +12,7 @@ body {
   color: $title-color;
 }
 
-/* =============== top__square ================== */
+/* =============== top__square (white square on the page top) ================== */
 .top__square {
   background-color: white;
   height: 35px;
@@ -37,11 +37,17 @@ body {
   margin: auto;
   text-align: center;
   text-justify: center;
+  height: 130px;
 }
 
 .tool__img {
+  //make icon center
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: white;
-  height: 90px;
+  height: 75%;
   border-radius: 3px;
   border-top: 5px solid #ea7600;
   border-bottom: 5px solid #ea7600;
@@ -72,16 +78,48 @@ body {
 
 @media screen and (min-width: 540px) {
   .tools_container {
-    gap: 15px;
+    gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-
+  .tool {
+    margin: auto;
+    text-align: center;
+    text-justify: center;
+    height: 140px;
+  }
   .tool__img {
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 75%;
   }
 }
 
-// note: for Medium screen devices (768px and above) for home page is configured in _responsive.scss
+// for pc
+@media only screen and (min-width: 1200px) {
+  .tools_container {
+    // gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .tool {
+    margin: auto;
+    text-align: center;
+    text-justify: center;
+    width: 300px;
+    height: 200px;
+  }
+  .tool__img {
+    font-size: 3em;
+    height: 75%;
+  }
+  .tool__img .uil-dice-five {
+    font-size: 1.8em;
+  }
+  .tool__text {
+    margin-top: 15px;
+    font-size: 1.2em;
+  }
+
+  .header___text {
+    font-size: 1.6em;
+
+    margin: auto 70px;
+  }
+}
